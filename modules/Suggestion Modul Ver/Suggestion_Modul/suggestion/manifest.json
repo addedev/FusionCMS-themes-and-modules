@@ -1,0 +1,11 @@
+{
+
+        "name":"Suggestion feature",
+        "description":"Users can suggest anything they want and only a Gm or an Admin can see it.",
+        "author":
+        {
+                "name":"Kim Benker",
+                "website":"http:\/\/www.revolution-network.eu\/"
+        },
+        "enabled":true
+}

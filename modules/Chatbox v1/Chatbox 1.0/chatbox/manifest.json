@@ -1,0 +1,14 @@
+{
+	"name": "My module",
+	"description": "Module description",
+	"author": {
+		"name": "Your name",
+		"website": "http://yourwebsite.com"
+	},
+
+	"admin": {
+		
+	},
+
+	"enabled":true
+}

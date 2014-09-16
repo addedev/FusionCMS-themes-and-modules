@@ -1,0 +1,5 @@
+Implemented donation/voting points subscription fee
+This is configurable as default value
+use 0 to disable subscription fee
+
+Fixed sidebox subscription status

@@ -1,0 +1,27 @@
+{
+	"description":"Allows users to post Bugreports and developers to see and delete them.",
+	"author":
+	{
+		"name":"Kim Benker",
+		"website":"http:\/\/revolution-network.eu\/"
+	},
+	"admin":
+	{
+		"group":
+		{
+			"text":"Website",
+			"icon":"cursor",
+			"links":
+			[
+				
+				{
+					"text":"Bugtracker",
+					"icon":"list",
+					"controller":"admin"
+				}
+			]
+			
+		}
+	},
+	"enabled":true
+}

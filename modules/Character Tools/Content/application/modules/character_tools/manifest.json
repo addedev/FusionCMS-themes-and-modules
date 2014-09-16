@@ -1,0 +1,24 @@
+{
+	"name": "Character Tools",
+	"description": "Enables your users to use blizzlike character tools.",
+	"author": {
+		"name": "ChoMPi",
+		"website": ""
+	},
+	
+	"permissions": {
+		"view": {"default" : true, "description": "View the character tools screen." }
+	},
+
+	"roles": {
+		"view": {
+			"description": "View the character tools module.",
+			
+			"permissions": {
+				"view": true
+			}
+		}
+	},
+
+	"enabled": true
+}

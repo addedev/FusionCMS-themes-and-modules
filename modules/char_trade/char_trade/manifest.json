@@ -1,0 +1,14 @@
+{
+	"name": "Character Trader",
+	"description": "Trade characters with others!",
+	"author": {
+		"name": "Nirelz",
+		"website": "http://cold-storm.com"
+	},
+
+	"admin": {
+		
+	},
+
+	"enabled":true
+}

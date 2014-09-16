@@ -1,0 +1,14 @@
+{
+	"name": "Dev Application",
+	"description": "in this module can you make staff applications for your team. And you can read them from the database or from the website!",
+	"author": {
+		"name": "Adam Alftberg",
+		"website": "http://WoWScream.com"
+	},
+
+	"admin": {
+		
+	},
+
+	"enabled":true
+}

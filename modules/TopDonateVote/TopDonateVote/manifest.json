@@ -1,0 +1,14 @@
+{
+	"name": "Top Donate",
+	"description": "Page for top donate stuff",
+	"author": {
+		"name": "Anechitei Alexandru aka ak47sigh(alexewarr)",
+		"website": "http://wow-like.com"
+	},
+
+	"admin": {
+		
+	},
+
+	"enabled":true
+}

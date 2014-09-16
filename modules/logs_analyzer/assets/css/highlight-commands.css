@@ -1,0 +1,67 @@
+.logs-page .command {
+    /*font-weight: bold;*/
+    color: #444;
+    background: #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+}
+.logs-page .command.l,
+.logs-page .command.le,
+.logs-page .command.lea,
+.logs-page .command.lear,
+.logs-page .command.learn {
+    color: orange;
+    font-weight: bold;
+}
+.logs-page .command.ticket,
+.logs-page .command.ticke,
+.logs-page .command.tic,
+.logs-page .command.ti,
+.logs-page .command.t {
+    color: green;
+}
+.logs-page .command.additem,
+.logs-page .command.addite,
+.logs-page .command.addit,
+.logs-page .command.addi,
+.logs-page .command.add {
+    color: red;
+}
+.logs-page .command.damage,
+.logs-page .command.damag,
+.logs-page .command.dama,
+.logs-page .command.dam,
+.logs-page .command.da,
+.logs-page .command.kill,
+.logs-page .command.kil,
+.logs-page .command.ki,
+.logs-page .command.k,
+.logs-page .command.d {
+    color: red;
+    font-weight: bold;
+}
+.logs-page .command.mod.mon,
+.logs-page .command.mod.mone,
+.logs-page .command.mod.money,
+.logs-page .command.modify.mon,
+.logs-page .command.modify.mone,
+.logs-page .command.modify.money,
+.logs-page .command.money {
+    background: yellow;
+    color: #000;
+}
+.logs-page .command.b,
+.logs-page .command.ba,
+.logs-page .command.ban {
+    background: orange;
+    color: #fff;
+}
+.logs-page .mod,
+.logs-page .modi,
+.logs-page .modif,
+.logs-page .modify {
+    color: rgb(151, 34, 34);
+}

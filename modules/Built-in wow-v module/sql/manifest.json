@@ -1,0 +1,14 @@
+{
+	"name": "SQL Manager",
+	"description": "Create SQL files in here.",
+	"author": {
+		"name": "Nirel",
+		"website": "http://cold-storm.com"
+	},
+
+	"admin": {
+		
+	},
+
+	"enabled":true
+}

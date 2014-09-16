@@ -1,0 +1,40 @@
+.lottery-page span.green,
+#main .right .box span.green {
+    color: green;
+    padding: 0;
+}
+#main .right .box li.running {
+    font-weight: bold;
+}
+.lottery-page .missing-content {
+    padding: 40px;
+    text-align: center;
+}
+.lottery-page .lottery-winners,
+.lottery-page .lottery-summary {
+    width: 100%;
+}
+.lottery-page .subscribe-form {
+    margin: 20px auto;
+}
+.lottery-page .subscribe-form select {
+    width: 200px;
+}
+.lottery-page .warning {
+    color: orange;
+}
+.lottery-page .center {
+    text-align: center;
+}
+.lottery-page .helptext {
+    font-size: 10px;
+}
+span.lottery-cost {
+    /*font-style: italic;*/
+}
+.popup_message span.lottery-cost {
+    color: red;
+}
+tr.subscription-fee td {
+    color: red;
+}

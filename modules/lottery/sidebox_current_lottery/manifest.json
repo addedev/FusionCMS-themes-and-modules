@@ -1,0 +1,11 @@
+{
+    "name": "Sidebox: lottery",
+    "description": "Displays status of the current lottery edition",
+
+    "author": {
+        "name": "Dawnbrightsu",
+        "website": ""
+    },
+
+    "enabled": true
+}

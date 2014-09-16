@@ -1,0 +1,46 @@
+#bugtracker .bugtracker_info {
+	font-size:12px;
+	font-weight:bold;
+	margin-left:5px;
+}
+
+#bugtracker {
+	margin-bottom:20px;
+}
+
+#bugtracker table {
+	margin-bottom:20px;
+}
+
+#bugtracker td a {
+	font-weight:bold;
+	margin-top:10px;
+	display:block;
+}
+
+#bugtracker .nice_table tr:not(:first-child) td {
+	font-weight:normal;
+	padding:4px;
+	padding-left:20px;
+	height:auto;
+}
+
+#bugtracker .bugtracker_text {
+	font-weight:normal;
+	font-size:12px;
+	height:10px;
+}
+
+#bugtracker_add {
+	margin:20px;
+}
+
+#bugtracker_add a {
+	margin-right:5px;
+}
+
+#bugtracker_add form {
+	float:right;
+	margin-top:-19px;
+	width:460px;
+}

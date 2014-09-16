@@ -1,0 +1,28 @@
+{
+	"name": "GM Logs Analyzer",
+	"description": "GM logs analyzer with commands highlights and advanced filters",
+	"author": {
+		"name": "Dawnbrightsu",
+		"website": ""
+	},
+
+	"admin": {
+        "group": {
+            "text":"Users",
+            "icon":"list",
+            "links":
+            [
+
+                {
+                    "text":"GM Logs Analyzer",
+                    "icon":"list",
+                    "controller":"logs_analyzer"
+                }
+
+            ]
+
+        }
+	},
+
+	"enabled":true
+}

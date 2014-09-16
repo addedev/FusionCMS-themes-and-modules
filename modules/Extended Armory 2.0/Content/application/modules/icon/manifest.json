@@ -1,0 +1,14 @@
+{
+	"name": "Gm Application",
+	"description": "Automated system",
+	"author": {
+		"name": "Dawnbrightsu",
+		"website": ""
+	},
+
+	"admin": {
+		
+	},
+
+	"enabled":true
+}

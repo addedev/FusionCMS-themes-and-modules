@@ -1,0 +1,14 @@
+{
+	"name": "Gm Application",
+	"description": "Automated system",
+	"author": {
+		"name": "Nirelz",
+		"website": "http://cold-storm.com"
+	},
+
+	"admin": {
+		
+	},
+
+	"enabled":true
+}

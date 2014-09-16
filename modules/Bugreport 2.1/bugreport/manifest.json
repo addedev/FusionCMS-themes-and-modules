@@ -1,0 +1,14 @@
+{
+	"name": "Bugtracker",
+	"description": "This is an automatic bugreporter instead of using a forum or a CMS of it.",
+	"author": {
+		"name": "Syd19",
+		"website": "http://212.1.213.43/"
+	},
+
+	"admin": {
+		
+	},
+
+	"enabled":true
+}

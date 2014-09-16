@@ -1,0 +1,3 @@
+1. Inset "bugtracker.sql" & "bugtracker_type.sql" into your fusion cms database !
+2. Move directory "bugtracker" in your directory ../application/modules/
+3. go to yourdomain.com/bugtracker to view ! 

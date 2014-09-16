@@ -1,0 +1,1 @@
+The status have been changed to fixed.

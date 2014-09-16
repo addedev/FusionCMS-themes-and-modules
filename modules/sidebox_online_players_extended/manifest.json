@@ -1,0 +1,14 @@
+{
+	"name": "online",
+	"description": "Automated system",
+	"author": {
+		"name": "Dawnbrightsu",
+		"website": ""
+	},
+
+	"admin": {
+		
+	},
+
+	"enabled":true
+}

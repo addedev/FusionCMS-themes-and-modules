@@ -1,0 +1,1 @@
+INSERT INTO `menu` (`name`, `link`, `side`, `rank`, `specific_rank`, `order`, `direct_link`, `permission`)  VALUES ( 'Character Tools', 'character_tools', 'side', '1', '0', '13', '0', '13');

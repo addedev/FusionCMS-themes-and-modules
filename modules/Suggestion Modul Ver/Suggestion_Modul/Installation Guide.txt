@@ -1,0 +1,5 @@
+Installation Guide: Suggestion Module Ver. 1.2
+
+1. execute "suggestion.sql" in your fusion database
+2. copy & paste the directory "suggestion" in your directory applications ! 
+3. Look at yourdomain.com/suggestion

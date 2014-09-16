@@ -1,0 +1,1 @@
+Put the theme folder in /application/themes/ and enable it through the admin panel

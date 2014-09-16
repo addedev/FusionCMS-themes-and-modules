@@ -1,0 +1,27 @@
+{
+	"name": "Lottery",
+	"description": "Uber lottery",
+	"author": {
+		"name": "Dawnbrightsu",
+		"website": ""
+	},
+
+    "admin": {
+        "group": {
+            "text":"Website",
+            "links":
+            [
+
+                {
+                    "text":"Lottery",
+                    "icon":"heart",
+                    "controller":"admin"
+                }
+
+            ]
+
+        }
+    },
+
+	"enabled": true
+}

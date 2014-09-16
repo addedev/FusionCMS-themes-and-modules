@@ -1,0 +1,26 @@
+DROP TABLE IF EXISTS `dev_apply`;
+CREATE TABLE `dev_apply` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) NOT NULL,
+  `Full name` varchar(255) NOT NULL,
+  `age` int(11) NOT NULL DEFAULT '1',
+  `country` varchar(255) NOT NULL DEFAULT '',
+  `info1` varchar(255) DEFAULT '',
+  `info2` varchar(255) DEFAULT NULL,
+  `info3` varchar(255) DEFAULT NULL,
+  `info4` varchar(255) DEFAULT NULL,
+  `info5` varchar(255) DEFAULT NULL,
+  `info6` varchar(255) DEFAULT NULL,
+  `info7` varchar(255) DEFAULT NULL,
+  `info8` varchar(25) DEFAULT NULL,
+  `info9` varchar(255) DEFAULT NULL,
+  `info10` varchar(255) DEFAULT NULL,
+  `info11` varchar(255) DEFAULT NULL,
+  `info12` varchar(255) DEFAULT NULL,
+  `info13` varchar(255) DEFAULT NULL,
+  `info14` varchar(255) DEFAULT NULL,
+  `info15` varchar(255) DEFAULT NULL,
+  `status` varchar(255) NOT NULL DEFAULT 'Pending',
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `users` (`user_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=17 DEFAULT CHARSET=latin1 ROW_FORMAT=DYNAMIC;

@@ -1,0 +1,189 @@
+.logs-page {
+    position: relative;
+}
+#main .right .box h2.a-left {
+    text-align: left;
+}
+#main .right .logs-page .box h2 .nice_button {
+    margin-left: 10px;
+    margin-top: -3px;
+}
+#main .right .logs-page .box.overlay-filter {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    z-index: 100;
+    -webkit-box-shadow: 2px 2px 12px rgba(50, 50, 50, 0.55);
+    -moz-box-shadow:    2px 2px 12px rgba(50, 50, 50, 0.55);
+    box-shadow:         2px 2px 12px rgba(50, 50, 50, 0.55);
+}
+.hide {
+    display: none;
+}
+a.js {
+    cursor: pointer;
+}
+a.leftf {
+    float: left;
+}
+a.rightf {
+    float: right;
+    margin-right: 10px;
+}
+.legend {
+    display: none;
+}
+.legend-toggler {
+    cursor: pointer;
+}
+.logs-list {
+    font-size: 11px;
+    background: #ebebeb;
+}
+.logs-list .line {
+    padding: 2px;
+    border-bottom: 1px dotted #999;
+}
+.loader {
+    background: url('../img/ajax.gif') no-repeat 20px center;
+    padding: 20px 40px 20px 60px;
+}
+#main .right .box .logs-page ul li span {
+    display: inline-block;
+    padding: 0 3px;
+}
+#main .right .box .logs-page ul li {
+    padding: 5px;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+    text-shadow: none;
+    background: #ebebeb;
+    border-bottom: 1px dotted #999;
+}
+#main .right .box .logs-page ul li:hover {
+    /*background: #fff;*/
+    /*cursor: pointer;*/
+    color: #000;
+}
+#main .right .box .logs-page ul li.other-player {
+    background: #ccc;
+    color: #000;
+}
+#main .right .box .logs-page ul li.other-player span.selected-p {
+    font-weight: bold;
+}
+
+/*
+commands colors
+*/
+.logs-page ul li:hover .tag.command {
+    margin-left: 15px;
+}
+.logs-page ul li .tag.world-map-zone {
+    float: right;
+    color: #999;
+}
+
+.logs-page .message {
+    padding: 20px;
+    text-align: center;
+    font-size: 13px;
+}
+.logs-page .message.error {
+    color: red;
+}
+.logs-page .message.warning {
+    color: orange;
+}
+.logs-page .message.success {
+    color: green;
+}
+
+
+/*
+###############
+    COLORS FOR HIGHLIGHTLING COMMANDS
+###############
+*/
+
+.logs-page .command {
+    /*font-weight: bold;*/
+    color: #444;
+    background: #fff;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-transition: 0.3s all;
+    transition: 0.3s all;
+}
+.logs-page .command.c-l,
+.logs-page .command.c-le,
+.logs-page .command.c-lea,
+.logs-page .command.c-lear,
+.logs-page .command.c-learn {
+    color: orange;
+    font-weight: bold;
+}
+.logs-page .command.c-ticket,
+.logs-page .command.c-ticke,
+.logs-page .command.c-tic,
+.logs-page .command.c-ti,
+.logs-page .command.c-t {
+    color: green;
+}
+.logs-page .command.c-additem,
+.logs-page .command.c-addite,
+.logs-page .command.c-addit,
+.logs-page .command.c-addi,
+.logs-page .command.c-add {
+    color: red;
+}
+.logs-page .command.c-damage,
+.logs-page .command.c-damag,
+.logs-page .command.c-dama,
+.logs-page .command.c-dam,
+.logs-page .command.c-da,
+.logs-page .command.c-kill,
+.logs-page .command.c-kil,
+.logs-page .command.c-ki,
+.logs-page .command.c-k,
+.logs-page .command.c-d {
+    color: red;
+    font-weight: bold;
+}
+.logs-page .command.c-mod.mon,
+.logs-page .command.c-mod.mone,
+.logs-page .command.c-mod.money,
+.logs-page .command.c-modify.mon,
+.logs-page .command.c-modify.mone,
+.logs-page .command.c-modify.money,
+.logs-page .command.c-money {
+    background: yellow;
+    color: #000;
+}
+.logs-page .command.c-b,
+.logs-page .command.c-ba,
+.logs-page .command.c-ban {
+    background: orange;
+    color: #fff;
+}
+.logs-page .c-mod,
+.logs-page .c-modi,
+.logs-page .c-modif,
+.logs-page .c-modify {
+    color: rgb(151, 34, 34);
+}
+.logs-page .command.c-b,
+.logs-page .command.c-ba,
+.logs-page .command.c-ban {
+    background: orange;
+    color: #fff;
+}
+.logs-page .command.c-q,
+.logs-page .command.c-qu,
+.logs-page .command.c-que,
+.logs-page .command.c-ques,
+.logs-page .command.c-quest {
+    color: #660033;
+}
+

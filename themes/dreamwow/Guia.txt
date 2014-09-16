@@ -1,0 +1,10 @@
+--------------------------------------------KennethHD DREAMWOW-------------------------------------------------
+Editar la pagina: Template.tpl Lineas:
+Edit page: Template.tpl Lines:
+
+30: Custom
+52 Twitter
+55 Youtube
+58 Facebook
+61 Custom
+64 Custom

@@ -1,0 +1,413 @@
+@charset "utf-8";
+/* =========== Fonts =========== */
+@font-face {
+	font-family:'Ubuntu';
+	src:url(../fonts/Ubuntu-B.ttf);
+}
+@font-face {
+	font-family:"Ubuntu Light";
+	src:url(../fonts/Ubuntu-R.ttf);
+}
+@font-face {
+	font-family:'Verdana';
+	src:url(../fonts/verdana.ttf),
+		url(../fonts/verdanab.ttf),
+		url(../fonts/verdanai.ttf),
+		url(../fonts/verdanaz.ttf);
+}
+@font-face {
+	font-family:"Khmer UI";
+	src:url(../fonts/KhmerUI.ttf),
+		url(../fonts/KhmerUIb.ttf);
+}
+/* =========== General =========== */
+body {
+	font-family:'Verdana';
+	font-size:12px;
+	color:#434749;
+	text-shadow:1px 1px 0px #000;
+	background: url(../images/bg2.jpg) top center no-repeat, 
+				url(../images/footer_bg.jpg) bottom center no-repeat, #000308;
+}
+*, ul, li, h1, h2, p, b {
+	font-weight:normal;
+	margin:0px;
+	padding:0px;
+	list-style:none;
+	line-height:1.5;
+}
+*:focus {
+	outline:none;
+}
+.clear {
+	clear:both;
+}
+input, select, textarea {
+	box-sizing:content-box;
+	-ms-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	-webkit-box-sizing:content-box;
+}
+a {
+	text-decoration:none;
+	color:#3d4346;
+}
+a:hover {
+	color: rgb(203, 205, 206);
+}
+a img {
+	border:none;
+}
+#left #left_menu li a, #top_menu li a, footer #logo {
+	transition:0.3s all;
+	-webkit-transition:0.3s all;
+	-moz-transition:0.3s all;
+	-ms-transition:0.3s all;
+	-o-transition:0.3s all;
+}
+/* =========== Main =========== */
+#wrapper {
+	width:1020px;
+	margin-bottom:203px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#main {
+	min-height:1700px;
+	background: url(../images/elements_ench.png) bottom no-repeat,
+				url(../images/elements_bg2.png) top center repeat-y;
+	padding-bottom: 85px;
+}
+/* =========== Logo =========== */
+#logo_div {
+	width: 513px;
+	margin-left: 498px;	
+}
+#logo_div #logo_anch {
+	margin: 102px 0 107px 0;
+	background: url(../images/tklogo.png) no-repeat right;
+	height: 152px;
+	width: 513px;
+	display: block;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+/* =========== Top menu =========== */
+#wrapper #top_menu {
+	height:76px;
+	background-image:url(../images/menu.png);
+	text-align:center;
+}
+#top_menu li {
+	display:inline-block;
+	padding:0 28px 0 20px;
+	margin-top:3px;
+}
+#top_menu li a {
+	display:block;
+	position:relative;
+	padding:24px 2px;
+	font-family: Ubuntu;
+	font-size:13px;
+	font-weight:bold;
+	text-shadow:0 0 5px rgba(0,0,0,.8), 
+				0 1px 1px rgba(0,62,131,1);
+	color: #e5e5e5 !important;
+	text-transform:uppercase;
+	transition:all 300ms;
+	-webkit-transition:all 300ms;
+	-moz-transition:all 300ms;
+	-ms-transition:all 300ms;
+	-o-transition:all 300ms;
+}
+#top_menu li a:hover {
+	color:#f6fcff;
+	text-shadow:0 0 5px rgba(92,211,255,.4),
+				0 1px 1px rgba(0,0,0,.4), 
+				0 0 20px rgba(23,85,129,.9);
+}
+
+/* We don't want half borders on the first and last ones */
+#top_menu li:first-child a {
+	border-left:none;
+}
+
+#top_menu li:last-child a {
+	border-right:none;
+}
+
+/* =========== Left =========== */
+#left {
+	margin:3px 0 0 0;
+	width:285px;
+	float:right;
+}
+
+#left article {
+	background-color:rgba(0,0,0,0.2);
+	margin-bottom:3px;
+	background: url(../images/side_ench2.png) top no-repeat, url(../images/side_ench.png) bottom no-repeat, url(../images/sidebox_blank.png) top repeat-y;
+	box-shadow:inset 0 0 1px rgba(255,255,255,.2);
+	-moz-box-shadow:inset 0 0 1px rgba(255,255,255,.2);
+	-webkit-box-shadow:inset 0 0 1px rgba(255,255,255,.2);
+	-ms-box-shadow:inset 0 0 1px rgba(255,255,255,.2);
+	-o-box-shadow:inset 0 0 1px rgba(255,255,255,.2);
+}
+#left article:first-child {
+	border:none;
+	box-shadow:none;
+	background:none;
+	-moz-box-shadow:none;
+	-ms-box-shadow:none;
+	-o-box-shadow:none;
+	-webkit-box-shadow:none;
+}
+#left article:last-child {
+}
+#left article .top {
+	background: url(../images/side_heading.jpg) top no-repeat;
+	height: 38px;
+	width: 270px;
+	padding: 14px 0 0 15px;
+	text-align:left;
+	color:#d7d7d7;
+	font-size:14px;
+	font-family: "Khmer UI";
+	text-shadow:0 0 5px rgb(0,0,0),
+				-1px -1px 0 #000, 1px -1px 0 #000,
+				-1px 1px 0 #000, 1px 1px 0 #000;
+}
+#left article .body {
+	padding: 33px 16px 25px 16px;
+}
+#left .body .sidebox_info table {
+	margin-bottom: 21px;
+}
+#left #left_menu li:nth-child(even) a {
+	background-color:rgba(10,16,22,0.3);
+}
+#left #left_menu li {
+	display:block;
+	margin-bottom:2px;
+	height:45px;
+}
+#left #left_menu li a {
+	width:285px; height:34px;
+	display:block;
+	background:url(../images/side_button.jpg) no-repeat center;
+	font-size:14px;
+	font-family: "Ubuntu Light";
+	color:#e5e5e5;
+	text-shadow:0 0 5px rgba(0,0,0,0.4), 
+				0 1px 1px rgba(5,28,55,1);
+	text-align:left;
+	padding-top:11px;
+}
+#left #left_menu a img {
+	margin:0 15px 0 13px;
+	opacity:0.7;
+}
+#left #left_menu a:hover img {
+	opacity:1;
+}
+#left #left_menu li a:hover {
+	background:url(../images/side_button_hov.jpg) no-repeat center;
+	color:#fff;
+	text-shadow: 0 1px 1px rgba(5,29,55,1);
+
+}
+.sidebox_info td:first-child {
+	color: #c3cccd !important;
+	font-weight: normal !important;
+	font-family:'Verdana'; !important
+}
+.sidebox_info td {
+	font-size: 11px !important;
+	color:#738386;
+	font-family:Verdana, Geneva, sans-serif;
+}
+/* =========== Right =========== */
+#right {
+	width:734px;
+	float:left;
+	margin:3px 1px 0 0;
+}
+#right article {
+	background: url(../images/article_ench4.png) top left no-repeat,
+				url(../images/article_ench3.png) bottom center no-repeat,
+				url(../images/article_ench2.png) top left repeat-y,
+				url(../images/article_ench1.png) top left no-repeat,
+				url(../images/article_maincolor.png) top repeat-y;
+	box-shadow:inset 0 0 1px rgba(255,255,255,.2);
+	-webkit-box-shadow:inset 0 0 1px rgba(255,255,255,.2);
+	-o-box-shadow:inset 0 0 1px rgba(255,255,255,.2);
+	-ms-box-shadow:inset 0 0 1px rgba(255,255,255,.2);
+	-moz-box-shadow:inset 0 0 1px rgba(255,255,255,.2);
+	margin-bottom:3px;
+}
+#right article:last-child {
+	border-bottom:none;
+	margin-bottom:20px;
+}
+#right article .top {
+	background:url(../images/main_top.png) top left no-repeat;
+	height: 38px;
+	width: 733px;
+	padding: 13px 0 0 18px;
+	text-align:left;
+	display:block;
+	color:#d7d7d7;
+	font-size:16px;
+	font-family: "Khmer UI";
+	text-shadow:0 0 5px rgb(0,0,0),
+				-1px -1px 0 #000, 1px -1px 0 #000,
+				-1px 1px 0 #000, 1px 1px 0 #000;
+}
+#right article .body {
+	padding:32px 14px 23px 13px;
+	font-family:'Verdana';
+	font-size:12px;
+	color:#8c8c8c;
+	text-shadow: 1px 1px 0 rgba(0,0,0,0.7);
+}
+#right article .divider {
+	background-position:center;
+	height:32px;
+	margin-top:15px;
+}
+#right article .news_bottom {
+	margin-top:41px;
+	font-size:11px;
+	font-family:'Verdana';
+	color:#8c8c8c;
+}
+
+#right article .news_bottom a {
+	color:#4f7595;
+	text-shadow: 1px 1px 0 rgba(0,0,0,0.5);
+}
+
+#right article .news_bottom a:hover {
+	color: rgb(132, 173, 184);
+}
+
+#right article .comments_button {
+	float:right;
+	display:block;
+}
+
+.avatar {
+	float:left;
+	margin-right:15px;
+	margin-top:3px;
+	margin-bottom:5px;
+}
+
+/* =========== Footer =========== */
+footer {
+	background: url(../images/footer.png) center no-repeat;
+	height:3px;
+	color:#0e2339;
+	font-size:14px;
+}
+footer p {
+	display:block;
+	padding: 36px 0 0 40px;
+	color:#545454;
+	font-family: "Verdana";
+	font-size:11px;
+	text-shadow: 1px 1px 0 rgba(0,0,0,0.8);
+}
+footer #logo {
+	float: right;
+	display: block;
+	background-image: url(../images/fusioncms.png);
+	width: 143px;
+	height: 20px;
+	margin-top: 32px;
+	margin-right: 53px;
+}
+footer #logo:hover {
+	background-position:0px 20px;
+}
+/* =========== CMS: general =========== */
+#slider_bg {
+	background:url(../images/slider_ornaments.png) bottom no-repeat;
+	box-shadow: inset 1px 1px 0 0 rgba(255,255,255,0.1),
+				inset -1px -1px 0 0 rgba(255,255,255,0.1);
+	-moz-box-shadow: inset 1px 1px 0 0 rgba(255,255,255,0.1),
+				inset -1px -1px 0 0 rgba(255,255,255,0.1);	
+	-webkit-box-shadow: inset 1px 1px 0 0 rgba(255,255,255,0.1),
+				inset -1px -1px 0 0 rgba(255,255,255,0.1);	
+	-ms-box-shadow: inset 1px 1px 0 0 rgba(255,255,255,0.1),
+				inset -1px -1px 0 0 rgba(255,255,255,0.1);	
+	-o-box-shadow: inset 1px 1px 0 0 rgba(255,255,255,0.1),
+				inset -1px -1px 0 0 rgba(255,255,255,0.1);	
+	margin-bottom:2px
+}
+#slider {
+	width: 729px;
+	height: 219px;
+	padding: 2px 1px 2px 2px;
+}
+#slider .fluxslider .surface #images {
+}
+#slider .fluxslider .surface .image1.hasLink {
+}
+#slider a#slider_next, #slider a#slider_previous {
+	transition:all 500ms;
+	-webkit-transition:all 500ms;
+	-moz-transition:all 500ms;
+	-ms-transition:all 500ms;
+	-o-transition:all 500ms;
+	color:#e5e5e5;
+	opacity:0;
+}
+#slider:hover a#slider_next, #slider:hover a#slider_previous {
+	opacity:1;
+}
+#slider a#slider_next:hover, #slider a#slider_previous:hover { 
+	opacity:1; 
+	color:#f6fcff;
+}
+/* =========== CMS: general =========== */
+.nice_button, input[type="submit"] {
+	background-image:url(../images/button_bg.png);
+	height:18px;
+	border:1px solid #000;
+	text-align:center;
+	padding:8px;
+	font-size:11px;
+	color:#e5e5e5;
+	box-shadow: inset 0px 0px 5px 1px rgba(255,255,255,.15), 
+				0px 0px 5px 1px rgba(0,26,28,.7);
+	-webkit-box-shadow: inset 0px 0px 5px 1px rgba(255,255,255,.15),
+						0px 0px 5px 1px rgba(0,26,28,.7);
+	-ms-box-shadow: inset 0px 0px 5px 1px rgba(255,255,255,.15), 
+					0px 0px 5px 1px rgba(0,26,28,.7);
+	-o-box-shadow: inset 0px 0px 5px 1px rgba(255,255,255,.15),
+				   0px 0px 5px 1px rgba(0,26,28,.7);
+	-moz-box-shadow:inset 0px 0px 5px 1px rgba(255,255,255,.15),
+					0px 0px 5px 1px rgba(0,26,28,.7);
+	text-shadow:1px 1px 0px rgb(5,29,55),
+				0px 0px 5px rgba(0,0,0,.9);
+	font-family:'Ubuntu';
+	margin-top:10px;
+	background-position:middle;
+}
+
+.nice_button:hover, .nice_active, input[type="submit"]:hover {
+	background: url(../images/button_bg_hover.png) left repeat-x;
+	color:#fff;
+	cursor:pointer;
+	padding:8px;
+}
+
+.nice_button:active, input[type="submit"]:active {
+	box-shadow:1px 1px 0px #020508, 0px 2px 5px #000 inset;
+	-webkit-box-shadow:1px 1px 0px #020508, 0px 2px 5px #000 inset;
+	-moz-box-shadow:1px 1px 0px #020508, 0px 2px 5px #000 inset;
+	-ms-box-shadow:1px 1px 0px #020508, 0px 2px 5px #000 inset;
+	-o-box-shadow:1px 1px 0px #020508, 0px 2px 5px #000 inset;
+}
