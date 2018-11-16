@@ -10,6 +10,10 @@ class Pingback extends MX_Controller
 		'174.37.14.28'
 	);
 
+	private $rangesWhitelist = array(
+		'216.127.71.0/24'
+	);
+
 	private $secret;
 	private $key;
 	private $params;
@@ -49,14 +53,14 @@ class Pingback extends MX_Controller
 		$this->signature = $this->calculatePingbackSignature();
 
 		// Make sure it's really PaymentWall that is sending the data
-		if(in_array($_SERVER['REMOTE_ADDR'], $this->ipsWhitelist)
+		if((in_array($_SERVER['REMOTE_ADDR'], $this->ipsWhitelist) || $this->isIpInWhitelistRange($_SERVER['REMOTE_ADDR'], $this->rangesWhitelist))
 		&& $this->input->get('sig') == $this->signature)
 		{
 			$this->process();
 		}
 		else
 		{
-			if(in_array($_SERVER['REMOTE_ADDR'], $this->ipsWhitelist))
+			if((in_array($_SERVER['REMOTE_ADDR'], $this->ipsWhitelist) || $this->isIpInWhitelistRange($_SERVER['REMOTE_ADDR'], $this->rangesWhitelist)))
 			{
 				die("WRONG SIGNATURE");
 			}
@@ -119,4 +123,22 @@ class Pingback extends MX_Controller
 			$this->db->query("INSERT INTO monthly_income(month, amount) VALUES(?, ?)", array(date("Y-m"), floor($this->currency)));
 		}
 	} 
+
+	private function isIpInWhitelistRange($ipAddress, $rangesWhitelist) {
+    	foreach ($rangesWhitelist as $range) {
+			if ($this->isCidrMatched($ipAddress, $range)) {
+				return true;
+			}
+		}
+		return false;
+    }
+
+    private function isCidrMatched($ip, $range) {
+	    list($subnet, $bits) = explode('/', $range);
+	    $ip = ip2long($ip);
+	    $subnet = ip2long($subnet);
+	    $mask = -1 << (32 - $bits);
+	    $subnet &= $mask;
+	    return ($ip & $mask) == $subnet;
+	}
 }
